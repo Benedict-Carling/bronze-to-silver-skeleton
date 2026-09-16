@@ -8,6 +8,6 @@
     rdfs:label "Minimal Silver dataset" ;
     rdfs:comment """A Silver-layer dataset minimally processed from bronze."""@en ;
     dct:publisher <https://github.com/ImperialCollegeLondon> ;
-    prof:isProfileOf <https://github.com/ImperialCollegeLondon/amrproj-data-management/tree/main/profiles/bronze> ;
+    prof:isProfileOf <https://github.com/ImperialCollegeLondon/amrproj-data-management/tree/main/profiles/bronze/0.1.0> ;
     prof:hasToken "minimal-silver" ;
 .
