@@ -48,6 +48,15 @@
         },
         "grades": {
           "type": "object",
+          "additionalProperties": {
+            "type": "object",
+            "properties": {
+              "tag": { "type": "string" },
+              "container": { "type": "string" },
+              "prefix": { "type": "string" }
+            },
+            "required": ["tag", "container"]
+          },
           "hidden": true
         }
       },
