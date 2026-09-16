@@ -1,0 +1,24 @@
+❌ Error: azcopy data transfer failed. See log output below:
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job 20075bdb-0dad-8840-5609-82c182cdfae5 has started
+Log file is located at: /root/.azcopy/20075bdb-0dad-8840-5609-82c182cdfae5.log
+
+INFO: Authentication failed, it is either not correct, or expired, or does not have the correct permission PUT https://lbfdatastorehns.blob.core.windows.net/imaging-processed/20260727-mighty-guppy-74d0-silver/20260727-mighty-guppy-74d0/mock_data/fun.jpeg
+--------------------------------------------------------------------------------
+RESPONSE 403: 403 This request is not authorized to perform this operation using this permission.
+ERROR CODE: AuthorizationPermissionMismatch
+--------------------------------------------------------------------------------
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+RequestId:e3ef262c-501e-00a6-5bcd-450604000000
+Time:2026-09-16T11:22:07.0742098Z</Message></Error>
+--------------------------------------------------------------------------------
+
+panic: close of nil channel
+
+goroutine 147 [running]:
+github.com/Azure/azure-storage-azcopy/v10/ste.(*jobMgr).reportJobPartDoneHandler(0x400047a708)
+	/azcopy/ste/mgr-JobMgr.go:718 +0x2bc
+created by github.com/Azure/azure-storage-azcopy/v10/ste.NewJobMgr in goroutine 1
+	/azcopy/ste/mgr-JobMgr.go:203 +0x9d0

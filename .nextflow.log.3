@@ -1,0 +1,296 @@
+Sept-16 12:24:10.861 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --target_id 20260727-mighty-guppy-74d0 -profile docker
+Sept-16 12:24:10.923 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 26.04.6
+Sept-16 12:24:10.948 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/benedictcarling/.nextflow/plugins; core-plugins: nf-amazon@3.9.2,nf-azure@1.22.6,nf-cloudcache@0.6.0,nf-codecommit@0.5.3,nf-console@1.3.0,nf-google@1.27.3,nf-k8s@1.5.4,nf-seqera@0.21.1,nf-tower@1.28.2,nf-wave@1.21.0
+Sept-16 12:24:10.968 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sept-16 12:24:10.969 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sept-16 12:24:10.971 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.14.1 in 'deployment' mode
+Sept-16 12:24:10.984 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Sept-16 12:24:11.113 [main] DEBUG nextflow.plugin.PluginUpdater - Using plugin repository: HttpPluginRepository [registry]; url=https://registry.nextflow.io/api
+Sept-16 12:24:11.116 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sept-16 12:24:11.137 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/nextflow.config
+Sept-16 12:24:11.139 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/nextflow.config
+Sept-16 12:24:11.142 [main] DEBUG nextflow.config.ConfigParserFactory - Using config parser v2
+Sept-16 12:24:11.154 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sept-16 12:24:11.451 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, local, docker, conda]
+Sept-16 12:24:11.483 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.7.2]
+Sept-16 12:24:11.483 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sept-16 12:24:11.483 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.7.2]
+Sept-16 12:24:11.485 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.7.2
+Sept-16 12:24:11.495 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.7.2' resolved
+Sept-16 12:24:11.495 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.7.2'
+Sept-16 12:24:11.501 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.7.2
+Sept-16 12:24:11.516 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/benedictcarling/.nextflow/secrets/store.json
+Sept-16 12:24:11.518 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@58867cd5] - activable => nextflow.secret.LocalSecretsProvider@58867cd5
+Sept-16 12:24:11.539 [main] DEBUG nextflow.cli.CmdRun - Enabling module binaries
+Sept-16 12:24:11.559 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [big_moriondo] - revision: 445b3932d7
+Sept-16 12:24:11.618 [main] DEBUG nextflow.Session - Session UUID: 65f8c47d-aae2-4c2f-9f07-964f9fa23a53
+Sept-16 12:24:11.618 [main] DEBUG nextflow.Session - Run name: big_moriondo
+Sept-16 12:24:11.618 [main] DEBUG nextflow.Session - Executor pool size: 10
+Sept-16 12:24:11.624 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Sept-16 12:24:11.628 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sept-16 12:24:11.653 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 26.04.6 build 0
+  Created: 09-07-2026 18:06 UTC (19:06 BST)
+  System: Mac OS X 26.6.2
+  Runtime: Groovy 4.0.31 on OpenJDK 64-Bit Server VM 26.0.2.1
+  Encoding: UTF-8 (UTF-8)
+  Process: 51334@Benedicts-MacBook-Pro.local [127.0.0.1]
+  CPUs: 10 - Mem: 16 GB (69.9 MB) - Swap: 3 GB (989.2 MB)
+Sept-16 12:24:11.661 [main] DEBUG nextflow.Session - Work-dir: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work [Mac OS X]
+Sept-16 12:24:11.661 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/bin
+Sept-16 12:24:11.669 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sept-16 12:24:11.675 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Sept-16 12:24:11.676 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Sept-16 12:24:11.680 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+Sept-16 12:24:11.696 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sept-16 12:24:11.702 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 11; maxThreads: 1000
+Sept-16 12:24:11.742 [main] DEBUG nextflow.Session - Session start
+Sept-16 12:24:11.749 [main] DEBUG nextflow.script.ScriptLoaderFactory - Using script parser v2
+Sept-16 12:24:12.272 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sept-16 12:24:12.388 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MINT_SAS` matches process MINT_SAS
+Sept-16 12:24:12.390 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sept-16 12:24:12.390 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sept-16 12:24:12.395 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sept-16 12:24:12.400 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=16 GB; capacity=10; pollInterval=100ms; dumpInterval=5m
+Sept-16 12:24:12.402 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Sept-16 12:24:12.436 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'MINT_SAS': maxForks=0; fair=false; array=0
+Sept-16 12:24:12.484 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:AZURE_.*` matches process AZURE_DOWNLOAD
+Sept-16 12:24:12.484 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sept-16 12:24:12.484 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sept-16 12:24:12.485 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'AZURE_DOWNLOAD': maxForks=0; fair=false; array=0
+Sept-16 12:24:12.502 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MINT_SAS` matches process PUBLISH:MINT_SAS
+Sept-16 12:24:12.503 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sept-16 12:24:12.503 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sept-16 12:24:12.504 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PUBLISH:MINT_SAS': maxForks=0; fair=false; array=0
+Sept-16 12:24:12.518 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:GENERATE_ID|GENERATE_ROCRATE|VALIDATE_ROCRATE` matches process PUBLISH:GENERATE_ROCRATE
+Sept-16 12:24:12.518 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sept-16 12:24:12.518 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sept-16 12:24:12.519 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PUBLISH:GENERATE_ROCRATE': maxForks=0; fair=false; array=0
+Sept-16 12:24:12.522 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:GENERATE_ID|GENERATE_ROCRATE|VALIDATE_ROCRATE` matches process PUBLISH:VALIDATE_ROCRATE
+Sept-16 12:24:12.522 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sept-16 12:24:12.522 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sept-16 12:24:12.523 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PUBLISH:VALIDATE_ROCRATE': maxForks=0; fair=false; array=0
+Sept-16 12:24:12.525 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:AZURE_.*` matches process PUBLISH:AZURE_UPLOAD
+Sept-16 12:24:12.526 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Sept-16 12:24:12.526 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sept-16 12:24:12.526 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'PUBLISH:AZURE_UPLOAD': maxForks=0; fair=false; array=0
+Sept-16 12:24:12.528 [main] DEBUG nextflow.Session - Process names: PUBLISH:MINT_SAS, PUBLISH:VALIDATE_ROCRATE, PUBLISH:GENERATE_ROCRATE, VALIDATE_ROCRATE, AZURE_DOWNLOAD, AZURE_UPLOAD, MINT_SAS, GENERATE_ROCRATE, PUBLISH:AZURE_UPLOAD
+Sept-16 12:24:12.530 [main] DEBUG nextflow.Session - Igniting dataflow network (6)
+Sept-16 12:24:12.530 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > MINT_SAS
+Sept-16 12:24:12.530 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > AZURE_DOWNLOAD
+Sept-16 12:24:12.531 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PUBLISH:MINT_SAS
+Sept-16 12:24:12.531 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PUBLISH:GENERATE_ROCRATE
+Sept-16 12:24:12.531 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PUBLISH:VALIDATE_ROCRATE
+Sept-16 12:24:12.531 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > PUBLISH:AZURE_UPLOAD
+Sept-16 12:24:12.531 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  _nf_script_51ef448db2d160e5: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/amrproj-data-management/nf_modules/mint_sas/main.nf
+  _nf_script_1dbf30acb56a4b24: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/amrproj-data-management/nf_modules/validate_rocrate/main.nf
+  _nf_script_7f5e77499e6f2056: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/amrproj-data-management/nf_modules/azcopy_upload/main.nf
+  _nf_script_e2b3db964ebf92bc: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/amrproj-data-management/nf_modules/generate_rocrate/main.nf
+  _nf_script_32caddbcf6539463: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/amrproj-data-management/nf_modules/sas_env/main.nf
+  _nf_script_c1e8df026c4594f0: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/amrproj-data-management/nf_modules/publish/main.nf
+  _nf_script_571dcb7431d55621: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/amrproj-data-management/nf_modules/azcopy_download/main.nf
+  Main: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/main.nf
+Sept-16 12:24:12.531 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sept-16 12:24:12.531 [main] DEBUG nextflow.Session - Session await
+Sept-16 12:24:12.626 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sept-16 12:24:12.628 [Task submitter] INFO  nextflow.Session - [a7/3ed77c] Submitted process > MINT_SAS (bronze)
+Sept-16 12:24:15.018 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: MINT_SAS (bronze); status: COMPLETED; exit: 0; error: -; workDir: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/a7/3ed77cbca6d30362baecb5193edc56]
+Sept-16 12:24:15.019 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=30; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Sept-16 12:24:15.061 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sept-16 12:24:15.062 [Task submitter] INFO  nextflow.Session - [04/879da1] Submitted process > AZURE_DOWNLOAD (20260727-mighty-guppy-74d0)
+Sept-16 12:24:20.915 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: AZURE_DOWNLOAD (20260727-mighty-guppy-74d0); status: COMPLETED; exit: 0; error: -; workDir: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/04/879da1c5985bd87a57ba36f9e4f17e]
+Sept-16 12:24:20.932 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sept-16 12:24:20.932 [Task submitter] INFO  nextflow.Session - [de/531917] Submitted process > PUBLISH:MINT_SAS (imaging-processed)
+Sept-16 12:24:23.000 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: PUBLISH:MINT_SAS (imaging-processed); status: COMPLETED; exit: 0; error: -; workDir: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/de/531917631359cd3a0b26477e1d4b4e]
+Sept-16 12:24:23.034 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sept-16 12:24:23.035 [Task submitter] INFO  nextflow.Session - [6a/342f1d] Submitted process > PUBLISH:GENERATE_ROCRATE (20260727-mighty-guppy-74d0-silver)
+Sept-16 12:24:23.476 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: PUBLISH:GENERATE_ROCRATE (20260727-mighty-guppy-74d0-silver); status: COMPLETED; exit: 0; error: -; workDir: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/6a/342f1dbaa902bfd360359ec459d112]
+Sept-16 12:24:23.489 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sept-16 12:24:23.489 [Task submitter] INFO  nextflow.Session - [34/515c21] Submitted process > PUBLISH:VALIDATE_ROCRATE (20260727-mighty-guppy-74d0-silver)
+Sept-16 12:24:24.973 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: PUBLISH:VALIDATE_ROCRATE (20260727-mighty-guppy-74d0-silver); status: COMPLETED; exit: 0; error: -; workDir: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/34/515c212a2ebe14bc542aeaa8a1acc5]
+Sept-16 12:24:24.984 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sept-16 12:24:24.985 [Task submitter] INFO  nextflow.Session - [63/693d48] Submitted process > PUBLISH:AZURE_UPLOAD (20260727-mighty-guppy-74d0-silver)
+Sept-16 12:24:25.516 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: PUBLISH:AZURE_UPLOAD (20260727-mighty-guppy-74d0-silver); status: COMPLETED; exit: 1; error: -; workDir: /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/63/693d4872c9d8f011e154ab5145d1de]
+Sept-16 12:24:25.520 [TaskFinalizer-6] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=PUBLISH:AZURE_UPLOAD (20260727-mighty-guppy-74d0-silver); work-dir=/Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/63/693d4872c9d8f011e154ab5145d1de
+  error [nextflow.exception.ProcessFailedException]: Process `PUBLISH:AZURE_UPLOAD (20260727-mighty-guppy-74d0-silver)` terminated with an error exit status (1)
+Sept-16 12:24:25.532 [TaskFinalizer-6] ERROR nextflow.processor.TaskProcessor - Error executing process > 'PUBLISH:AZURE_UPLOAD (20260727-mighty-guppy-74d0-silver)'
+
+Caused by:
+  Process `PUBLISH:AZURE_UPLOAD (20260727-mighty-guppy-74d0-silver)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  set -euo pipefail
+  
+  # 1. Check if azcopy is installed
+  if ! command -v azcopy >/dev/null 2>&1; then
+      echo "❌ Error: 'azcopy' CLI tool is not installed or not found in PATH."
+      echo "Please install azcopy (https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10) or run with '-profile docker'."
+      exit 1
+  fi
+  
+  # 2. Check SAS env file
+  if [ ! -f "azure_sas.env" ]; then
+      echo "❌ Error: SAS environment file 'azure_sas.env' not found."
+      exit 1
+  fi
+  
+  . "azure_sas.env"
+  
+  ID="20260727-mighty-guppy-74d0-silver"
+  if [ -z "$ID" ]; then
+      echo "❌ Error: Upload ID is empty."
+      exit 1
+  fi
+  
+  # Nextflow stages the dataset as a symlink, and azcopy would copy the link
+  # rather than its contents. Resolve it on the host at submission time --
+  # Nextflow bind-mounts the resolved location into the container under the
+  # same absolute path, so this is valid on both the local and docker profiles.
+  REAL_PATH="/Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/04/879da1c5985bd87a57ba36f9e4f17e/20260727-mighty-guppy-74d0"
+  
+  if [ ! -e "$REAL_PATH" ]; then
+      echo "❌ Error: Local source path '$REAL_PATH' does not exist."
+      exit 1
+  fi
+  
+  BLOB_PATH="https://${AZURE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/${ID}"
+  
+  if [ -d "$REAL_PATH" ]; then
+      TARGET_DEST="${BLOB_PATH}"
+  else
+      TARGET_DEST="${BLOB_PATH}/$(basename "$REAL_PATH")"
+  fi
+  
+  # 3. Upload data payload to Azure Blob Storage via azcopy
+  azcopy copy \
+      "$REAL_PATH" \
+      "${TARGET_DEST}?${AZURE_SAS}" \
+      --recursive=true \
+      --overwrite=false \
+      --exclude-pattern=".DS_Store;._*" \
+      > azcopy.log 2>&1 || {
+          echo "❌ Error: azcopy data transfer failed. See log output below:"
+          cat azcopy.log
+          exit 1
+      }
+  
+  # 4. Upload the pre-generated sidecar ro-crate-metadata.json, resolved the same way.
+  azcopy copy \
+      "/Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/6a/342f1dbaa902bfd360359ec459d112/ro-crate-metadata.json" \
+      "${BLOB_PATH}/ro-crate-metadata.json?${AZURE_SAS}" \
+      --overwrite=true \
+      >> azcopy.log 2>&1 || {
+          echo "❌ Error: Failed to upload sidecar ro-crate-metadata.json via azcopy. See log output below:"
+          cat azcopy.log
+          exit 1
+      }
+  
+  echo "${BLOB_PATH}"
+
+Command exit status:
+  1
+
+Command output:
+  ❌ Error: azcopy data transfer failed. See log output below:
+  INFO: Scanning...
+  INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+  
+  Job 9528081b-98ab-4a40-612e-e8ed6b05918e has started
+  Log file is located at: /root/.azcopy/9528081b-98ab-4a40-612e-e8ed6b05918e.log
+  
+  INFO: Authentication failed, it is either not correct, or expired, or does not have the correct permission PUT https://lbfdatastorehns.blob.core.windows.net/imaging-processed/20260727-mighty-guppy-74d0-silver/20260727-mighty-guppy-74d0/mock_data/minion.jpeg
+  --------------------------------------------------------------------------------
+  RESPONSE 403: 403 This request is not authorized to perform this operation using this permission.
+  ERROR CODE: AuthorizationPermissionMismatch
+  --------------------------------------------------------------------------------
+  ﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+  RequestId:3209adbe-701e-0018-1acd-456e7d000000
+  Time:2026-09-16T11:24:25.4069862Z</Message></Error>
+  --------------------------------------------------------------------------------
+  
+  panic: close of nil channel
+  
+  goroutine 161 [running]:
+  github.com/Azure/azure-storage-azcopy/v10/ste.(*jobMgr).reportJobPartDoneHandler(0x4000598708)
+  	/azcopy/ste/mgr-JobMgr.go:718 +0x2bc
+  created by github.com/Azure/azure-storage-azcopy/v10/ste.NewJobMgr in goroutine 1
+  	/azcopy/ste/mgr-JobMgr.go:203 +0x9d0
+
+Command error:
+  ❌ Error: azcopy data transfer failed. See log output below:
+  INFO: Scanning...
+  INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+  
+  Job 9528081b-98ab-4a40-612e-e8ed6b05918e has started
+  Log file is located at: /root/.azcopy/9528081b-98ab-4a40-612e-e8ed6b05918e.log
+  
+  INFO: Authentication failed, it is either not correct, or expired, or does not have the correct permission PUT https://lbfdatastorehns.blob.core.windows.net/imaging-processed/20260727-mighty-guppy-74d0-silver/20260727-mighty-guppy-74d0/mock_data/minion.jpeg
+  --------------------------------------------------------------------------------
+  RESPONSE 403: 403 This request is not authorized to perform this operation using this permission.
+  ERROR CODE: AuthorizationPermissionMismatch
+  --------------------------------------------------------------------------------
+  ﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+  RequestId:3209adbe-701e-0018-1acd-456e7d000000
+  Time:2026-09-16T11:24:25.4069862Z</Message></Error>
+  --------------------------------------------------------------------------------
+  
+  panic: close of nil channel
+  
+  goroutine 161 [running]:
+  github.com/Azure/azure-storage-azcopy/v10/ste.(*jobMgr).reportJobPartDoneHandler(0x4000598708)
+  	/azcopy/ste/mgr-JobMgr.go:718 +0x2bc
+  created by github.com/Azure/azure-storage-azcopy/v10/ste.NewJobMgr in goroutine 1
+  	/azcopy/ste/mgr-JobMgr.go:203 +0x9d0
+
+Work dir:
+  /Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/63/693d4872c9d8f011e154ab5145d1de
+
+Container:
+  ghcr.io/benedict-carling/azcopy@sha256:196eb6d7a2bf26a3907318f1d4f9c8b1a0994d547e67e40ae67d20bb3eaf4ed9
+
+Tip: you can try to figure out what's wrong by changing to the process work dir and showing the script file named `.command.sh`
+Sept-16 12:24:25.537 [TaskFinalizer-6] DEBUG nextflow.Session - Session aborted -- Cause: Process `PUBLISH:AZURE_UPLOAD (20260727-mighty-guppy-74d0-silver)` terminated with an error exit status (1)
+Sept-16 12:24:25.537 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sept-16 12:24:25.560 [TaskFinalizer-6] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11.8s; failedDuration=439ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Sept-16 12:24:25.600 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Sept-16 12:24:25.600 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sept-16 12:24:25.602 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=5; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=11.8s; failedDuration=439ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=1; peakMemory=0; ]
+Sept-16 12:24:25.602 [TaskFinalizer-6] DEBUG nextflow.Session - null
+java.lang.InterruptedException
+	at java.base/java.lang.Object.wait0(Native Method)
+	at java.base/java.lang.Object.wait(Object.java:391)
+	at java.base/java.lang.Thread.join(Thread.java:1914)
+	at java.base/java.lang.Thread.join(Thread.java:1990)
+	at nextflow.trace.AnsiLogObserver.onFlowComplete(AnsiLogObserver.groovy:559)
+	at nextflow.Session$_notifyFlowComplete_lambda38.doCall(Session.groovy:1093)
+	at nextflow.Session.notifyEvent(Session.groovy:1123)
+	at nextflow.Session.notifyFlowComplete(Session.groovy:1093)
+	at nextflow.Session.shutdown0(Session.groovy:775)
+	at nextflow.Session.abort(Session.groovy:830)
+	at nextflow.Session.fault(Session.groovy:792)
+	at nextflow.processor.TaskPollingMonitor.finalizeTask(TaskPollingMonitor.groovy:753)
+	at nextflow.processor.TaskPollingMonitor.safeFinalizeTask(TaskPollingMonitor.groovy:736)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at groovy.lang.MetaClassImpl.doInvokeMethod(MetaClassImpl.java:1341)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1096)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1009)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:645)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethodSafe(InvokerHelper.java:82)
+	at nextflow.processor.TaskPollingMonitor$_checkTaskStatus_lambda8.doCall(TaskPollingMonitor.groovy:726)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:545)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:330)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1516)
+Sept-16 12:24:25.760 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sept-16 12:24:25.769 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.7.2'
+Sept-16 12:24:25.770 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Sept-16 12:24:25.770 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

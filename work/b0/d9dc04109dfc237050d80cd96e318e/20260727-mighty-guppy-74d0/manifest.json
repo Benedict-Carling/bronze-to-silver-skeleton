@@ -1,0 +1,10 @@
+{
+  "upload_id": "20260727-mighty-guppy-74d0",
+  "uploaded_by": "aoswald@ic.ac.uk",
+  "subscription_name": "Biofoundry Cloud",
+  "subscription_id": "792dbcb0-d01e-41df-bb81-c3c77a205321",
+  "storage_account": "lbfdatastorehns",
+  "container": "bronze",
+  "timestamp_utc": "2026-07-27T17:28:51Z",
+  "source_path": "/Users/aoswald/Dev/amrproj-data-management/inputs/data/mock_data"
+}

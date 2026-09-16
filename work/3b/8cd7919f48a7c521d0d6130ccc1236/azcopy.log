@@ -1,0 +1,23 @@
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job a4d43d99-9ef0-b74d-6b83-babbd1884b43 has started
+Log file is located at: /root/.azcopy/a4d43d99-9ef0-b74d-6b83-babbd1884b43.log
+
+INFO: Authentication failed, it is either not correct, or expired, or does not have the correct permission PUT https://lbfdatastorehns.blob.core.windows.net/imaging-processed/20260727-mighty-guppy-74d0-silver/20260727-mighty-guppy-74d0/mock_data/minion.jpeg
+--------------------------------------------------------------------------------
+RESPONSE 403: 403 This request is not authorized to perform this operation using this permission.
+ERROR CODE: AuthorizationPermissionMismatch
+--------------------------------------------------------------------------------
+﻿<?xml version="1.0" encoding="utf-8"?><Error><Code>AuthorizationPermissionMismatch</Code><Message>This request is not authorized to perform this operation using this permission.
+RequestId:f9a0a451-801e-0033-4bce-45eeb1000000
+Time:2026-09-16T11:25:17.5531143Z</Message></Error>
+--------------------------------------------------------------------------------
+
+panic: close of nil channel
+
+goroutine 152 [running]:
+github.com/Azure/azure-storage-azcopy/v10/ste.(*jobMgr).reportJobPartDoneHandler(0x400048c708)
+	/azcopy/ste/mgr-JobMgr.go:718 +0x2bc
+created by github.com/Azure/azure-storage-azcopy/v10/ste.NewJobMgr in goroutine 1
+	/azcopy/ste/mgr-JobMgr.go:203 +0x9d0

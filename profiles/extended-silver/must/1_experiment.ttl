@@ -1,0 +1,17 @@
+@prefix ro-crate: <https://github.com/crs4/rocrate-validator/profiles/ro-crate-1.2/> .
+@prefix extended-silver: <https://github.com/ImperialCollegeLondon/bronze-to-silver-skeleton/profiles/extended-silver/> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+extended-silver:Experiment a sh:NodeShape ;
+    sh:name "Extended Silver experiment record" ;
+    sh:description "An extended silver dataset MUST have an experiment_type additional property" ;
+    sh:targetClass ro-crate:RootDataEntity ;
+    sh:property [
+        a sh:PropertyShape ;
+        sh:name "experiment_type" ;
+        sh:path schema:additionalProperty ;
+        sh:qualifiedValueShape [ sh:property [ sh:path schema:name ; sh:hasValue "experiment_type" ] ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "Expected an additionalProperty named experiment_type" ;
+    ] .

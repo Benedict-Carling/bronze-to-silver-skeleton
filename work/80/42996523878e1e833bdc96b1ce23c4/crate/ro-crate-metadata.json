@@ -1,0 +1,126 @@
+{
+    "@context": "https://w3id.org/ro/crate/1.2/context",
+    "@graph": [
+        {
+            "@id": "./",
+            "@type": "Dataset",
+            "additionalProperty": [
+                {
+                    "@id": "#subscription_name"
+                },
+                {
+                    "@id": "#subscription_id"
+                },
+                {
+                    "@id": "#source_path"
+                },
+                {
+                    "@id": "#sample_id"
+                }
+            ],
+            "conformsTo": [
+                {
+                    "@id": "https://github.com/ImperialCollegeLondon/bronze-to-silver-skeleton/tree/main/profiles/minimal-silver"
+                }
+            ],
+            "creator": {
+                "@id": "#uploader"
+            },
+            "datePublished": "2026-09-16T11:25:41Z",
+            "description": "Silver-layer dataset 20260727-mighty-guppy-74d0-silver",
+            "distribution": {
+                "@id": "#blob-location"
+            },
+            "hasPart": [
+                {
+                    "@id": "20260727-mighty-guppy-74d0/manifest.json"
+                },
+                {
+                    "@id": "20260727-mighty-guppy-74d0/mock_data/fun.jpeg"
+                },
+                {
+                    "@id": "20260727-mighty-guppy-74d0/mock_data/minion.jpeg"
+                }
+            ],
+            "identifier": "20260727-mighty-guppy-74d0-silver",
+            "license": "https://rightsstatements.org/vocab/InC/1.0/",
+            "name": "20260727-mighty-guppy-74d0-silver",
+            "wasDerivedFrom": {
+                "@id": "#source-20260727-mighty-guppy-74d0"
+            }
+        },
+        {
+            "@id": "ro-crate-metadata.json",
+            "@type": "CreativeWork",
+            "about": {
+                "@id": "./"
+            },
+            "conformsTo": {
+                "@id": "https://w3id.org/ro/crate/1.2"
+            }
+        },
+        {
+            "@id": "#uploader",
+            "@type": "Person",
+            "name": "bencarling11@outlook.com"
+        },
+        {
+            "@id": "#blob-location",
+            "@type": "DataDownload",
+            "contentUrl": "https://lbfdatastorehns.blob.core.windows.net/bronze/silver-skeleton/20260727-mighty-guppy-74d0-silver"
+        },
+        {
+            "@id": "#source-20260727-mighty-guppy-74d0",
+            "@type": "Dataset",
+            "identifier": "20260727-mighty-guppy-74d0",
+            "name": "20260727-mighty-guppy-74d0"
+        },
+        {
+            "@id": "#subscription_name",
+            "@type": "PropertyValue",
+            "name": "subscription_name",
+            "value": "Biofoundry Cloud"
+        },
+        {
+            "@id": "#subscription_id",
+            "@type": "PropertyValue",
+            "name": "subscription_id",
+            "value": "792dbcb0-d01e-41df-bb81-c3c77a205321"
+        },
+        {
+            "@id": "#source_path",
+            "@type": "PropertyValue",
+            "name": "source_path",
+            "value": "/Users/benedictcarling/Documents/GitHub/lbf-upload/bronze-to-silver-skeleton/work/e4/a121053df3e1f0651ce5e9cdad138a/20260727-mighty-guppy-74d0"
+        },
+        {
+            "@id": "#sample_id",
+            "@type": "PropertyValue",
+            "name": "sample_id",
+            "value": "SAM-9999"
+        },
+        {
+            "@id": "https://github.com/ImperialCollegeLondon/bronze-to-silver-skeleton/tree/main/profiles/minimal-silver",
+            "@type": [
+                "CreativeWork",
+                "Profile"
+            ],
+            "name": "https://github.com/ImperialCollegeLondon/bronze-to-silver-skeleton/tree/main/profiles/minimal-silver"
+        },
+        {
+            "@id": "20260727-mighty-guppy-74d0/manifest.json",
+            "@type": "File",
+            "contentSize": "382"
+        },
+        {
+            "@id": "20260727-mighty-guppy-74d0/mock_data/fun.jpeg",
+            "@type": "File",
+            "contentSize": "15742"
+        },
+        {
+            "@id": "20260727-mighty-guppy-74d0/mock_data/minion.jpeg",
+            "@type": "File",
+            "contentSize": "6902"
+        }
+    ]
+}

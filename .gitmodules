@@ -1,0 +1,3 @@
+[submodule "amrproj-data-management"]
+	path = amrproj-data-management
+	url = https://github.com/ImperialCollegeLondon/amrproj-data-management.git

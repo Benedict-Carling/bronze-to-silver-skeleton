@@ -1,0 +1,53 @@
+{
+    "meta": {
+        "generated_by": "rocrate-validator",
+        "version": "0.11.4"
+    },
+    "validation_settings": {
+        "rocrate_uri": "crate",
+        "rocrate_relative_root_path": null,
+        "profiles_path": "/usr/local/lib/python3.12/site-packages/rocrate_validator/profiles",
+        "extra_profiles_path": "profile_src",
+        "profile_identifier": "minimal-silver",
+        "enable_profile_inheritance": true,
+        "abort_on_first": false,
+        "disable_inherited_profiles_issue_reporting": false,
+        "requirement_severity": "REQUIRED",
+        "allow_requirement_check_override": true,
+        "disable_check_for_duplicates": false,
+        "skip_checks": [],
+        "metadata_only": false,
+        "verbose": false,
+        "cache_max_age": -1,
+        "cache_path": "/root/.cache/rocrate-validator/http_cache",
+        "offline": false,
+        "no_cache": false,
+        "creation_time": false,
+        "enforce_availability": false,
+        "skip_availability_check": false,
+        "profile_identifiers": [
+            "minimal-silver"
+        ]
+    },
+    "passed": true,
+    "issues": [],
+    "statistics": {
+        "started_at": "2026-09-16T11:22:05.796450+00:00",
+        "finished_at": "2026-09-16T11:22:06.372769+00:00",
+        "duration": 0.576319,
+        "profiles": [
+            "minimal-silver"
+        ],
+        "total_requirements": 1,
+        "total_passed_requirements": 1,
+        "total_failed_requirements": 0,
+        "total_checks": 2,
+        "total_passed_checks": 2,
+        "total_failed_checks": 0,
+        "total_checks_by_severity": {
+            "REQUIRED": 2,
+            "RECOMMENDED": 0,
+            "OPTIONAL": 0
+        }
+    }
+}

@@ -1,0 +1,24 @@
+INFO: Scanning...
+INFO: Any empty folders will not be processed, because source and/or destination doesn't have full folder support
+
+Job 6752ec20-546c-c249-4602-07eda1c82c5f has started
+Log file is located at: /root/.azcopy/6752ec20-546c-c249-4602-07eda1c82c5f.log
+
+100.0 %, 3 Done, 0 Failed, 0 Pending, 0 Skipped, 3 Total, 2-sec Throughput (Mb/s): 0.092
+
+
+Job 6752ec20-546c-c249-4602-07eda1c82c5f summary
+Elapsed Time (Minutes): 0.0334
+Number of File Transfers: 3
+Number of Folder Property Transfers: 0
+Number of Symlink Transfers: 0
+Total Number of Transfers: 3
+Number of File Transfers Completed: 3
+Number of Folder Transfers Completed: 0
+Number of File Transfers Failed: 0
+Number of Folder Transfers Failed: 0
+Number of File Transfers Skipped: 0
+Number of Folder Transfers Skipped: 0
+Total Number of Bytes Transferred: 23026
+Final Job Status: Completed
+

@@ -1,0 +1,13 @@
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://github.com/ImperialCollegeLondon/bronze-to-silver-skeleton/tree/main/profiles/minimal-silver>
+    a prof:Profile ;
+    rdfs:label "Minimal Silver dataset" ;
+    rdfs:comment """A Silver-layer dataset minimally processed from bronze."""@en ;
+    dct:publisher <https://github.com/ImperialCollegeLondon> ;
+    prof:isProfileOf <https://github.com/ImperialCollegeLondon/amrproj-data-management/tree/main/profiles/bronze> ;
+    prof:hasToken "minimal-silver" ;
+.

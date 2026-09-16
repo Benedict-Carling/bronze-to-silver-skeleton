@@ -1,0 +1,17 @@
+@prefix ro-crate: <https://github.com/crs4/rocrate-validator/profiles/ro-crate-1.2/> .
+@prefix minimal-silver: <https://github.com/ImperialCollegeLondon/bronze-to-silver-skeleton/profiles/minimal-silver/> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+minimal-silver:Metadata a sh:NodeShape ;
+    sh:name "Minimal Silver metadata record" ;
+    sh:description "A minimal silver dataset MUST have a sample_id additional property" ;
+    sh:targetClass ro-crate:RootDataEntity ;
+    sh:property [
+        a sh:PropertyShape ;
+        sh:name "sample_id" ;
+        sh:path schema:additionalProperty ;
+        sh:qualifiedValueShape [ sh:property [ sh:path schema:name ; sh:hasValue "sample_id" ] ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:message "Expected an additionalProperty named sample_id" ;
+    ] .
