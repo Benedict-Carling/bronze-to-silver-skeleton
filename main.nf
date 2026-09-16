@@ -7,9 +7,9 @@ include { PUBLISH }         from './amrproj-data-management/nf_modules/publish'
 params.target_id   = null
 params.profile     = 'minimal-silver'
 params.container   = 'bronze'
-params.bronze_tag  = 'role=bronze'
+params.bronze_tag  = 'role=bronze-test'
 params.grades      = [
-    silver: [tag: 'role=silver', container: 'bronze', prefix: 'silver-skeleton']
+    silver: [tag: 'role=silver', container: 'silver', prefix: '']
 ]
 params.sas_env     = null
 params.help        = false
